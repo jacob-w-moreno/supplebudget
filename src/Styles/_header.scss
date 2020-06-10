@@ -1,0 +1,18 @@
+.header{
+    @include row(space-between);
+    align-items: center;
+    @include dim(40px, 100%);
+    padding: 0px 10px;
+    background: $orange;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+#hamburger{
+    background-image: url("https://squidslippers.s3-us-west-1.amazonaws.com/Hamburger_Menu.png");
+    background-size: cover;
+}
+#add{
+    background-image: url("https://squidslippers.s3-us-west-1.amazonaws.com/Icon_Add.png");
+    background-size: cover;
+}

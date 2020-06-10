@@ -1,0 +1,26 @@
+#dashboard{
+    margin: 25px 0px;
+    width: 290px;
+    @include row(space-between);
+    align-items: center;
+    color: white;
+}
+.balances{
+    @include dim(60px, 80px);
+    @include column;
+    justify-content: space-between;
+}
+.line{
+    width: 100%;
+    border-top: 3px solid white;
+}
+.circle{
+    @include dim(100px, 100px);
+    @include row(center);
+    border: 3px solid white;
+    border-radius: 54px;
+    background: $orange;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}

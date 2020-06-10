@@ -1,0 +1,42 @@
+$orange: #ff9801;
+$gray: #757575;
+$lightgray: #c2c2c2;
+
+@mixin column(){
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+}
+@mixin row($justify){
+    display: flex;
+    flex-direction: row;
+    justify-content: $justify;
+    box-sizing: border-box;
+}
+@mixin dim($height, $width){
+    height: $height;
+    width: $width;
+}
+
+.App{
+    @include row(center);
+    background: $gray;
+    min-height: 100vh;
+}
+#column{
+    @include column;
+}
+.icon{
+    @include dim(25px, 25px);
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+@import './header';
+@import './budget';
+@import './dashboard';
+@import './list';
+@import './listitem';
+@import './addTrans';

@@ -1,0 +1,40 @@
+#list{
+    width: 500px;
+    border-bottom: 2px solid $lightgray;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+#categories{
+    @include dim(40px, 100%);
+    background: $orange;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    @include row(center);
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+#titles{
+    @include row(space-between);
+    padding: 3px 10px;
+    background: white;
+    font-size: 15px;
+}
+.title{
+    width: 115px;
+}
+#title-center{
+    text-align: center;
+}
+#title-right{
+    text-align: right;
+}
+.add-button{
+    @include dim(30px, 100%);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background: $orange;
+}

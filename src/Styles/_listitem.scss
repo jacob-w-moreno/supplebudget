@@ -1,0 +1,21 @@
+.list-item {
+    @include dim(30px, 100%);
+    @include row(space-between);
+    align-items: center;
+    color: white;
+    padding: 0px 10px;
+    input{
+        background: none;
+        border: none;
+        color: white;
+        font-size: 16px;
+        width: 90%
+    }
+}
+.edit-box{
+    @include row(flex-start);
+    width: 115px;
+}
+#percent{
+    color: $lightgray;
+}

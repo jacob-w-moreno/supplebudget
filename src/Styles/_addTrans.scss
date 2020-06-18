@@ -4,6 +4,7 @@
     @include column;
     background: rgba(0, 0, 0, 0.5);
 }
+
 #addTransInner{
     width: 90%;
     background: $gray;
@@ -12,6 +13,7 @@
     margin-top: 190px;
     padding-top: 0px;
     @include column;
+
     header{
         @include dim(40px, 100%);
         @include row(center);
@@ -22,6 +24,7 @@
         font-size: 20px;
         font-weight: bold;
     }
+
     input{
         background: none;
         border: none;
@@ -29,19 +32,78 @@
         font-size: 16px;
         width: 95%;
     }
+
 }
+
 #border{
     width: 300px;
     border: 1px solid $lightgray;
 }
+
 #trans-list{
     @include column;
     padding: 0px 10px;
     width: 300px;
     border: 1px solid $lightgray;
 }
+
 #trans-item{
     @include row(space-between);
     width: 100%;
     padding: 5px 0px;
 }
+
+#select{
+  background: $orange;
+  padding: 5px;
+  font-size: 30px;
+}
+
+.transactions{
+  width: 500px;
+  border: 1px solid $lightgray;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  @include row(space-between);
+}
+
+.input-box{
+  margin-top: 4px;
+}
+
+#trans-type{
+  &:hover {
+    cursor: pointer;
+  }
+  @include dim(40px, 40px);
+  padding: none;
+  line-height: 35px;
+  border: 1px solid $lightgray;
+  text-align: center;
+  font-size: 35px;
+  // border-radius: 25px;
+}
+
+#income {
+  color: rgb(164, 255, 164);
+}
+
+#expense{
+  color: rgb(255, 187, 187);
+}
+
+#trans-amount{
+  border: 1px solid $lightgray;
+  height: 40px;
+}
+
+// .trans-input{
+//   background: none;
+//   border: 1px solid $lightgray;
+//   padding-left: 5px;
+//   &:focus {
+//     border: none
+//   }
+// }

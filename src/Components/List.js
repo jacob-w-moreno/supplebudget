@@ -53,7 +53,7 @@ const List = (props) => {
 
 
     return(<div id='list'>
-        <div id='categories'>Categories</div>
+        <div className='orange-header'>Categories</div>
         {props. edit ?
             <div id='titles'>
                 <span className='title'>Allocated</span>

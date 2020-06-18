@@ -4,7 +4,7 @@
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
-#categories{
+.orange-header{
     @include dim(40px, 100%);
     background: $orange;
     border-top-left-radius: 8px;

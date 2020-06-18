@@ -13,7 +13,7 @@ const Budget = (props) => {
   const [dollar, setDollar] = useState([]);
   const [percent, setPercent] = useState([]);
   const [edit, togEdit] = useState(false);
-  const [add, togAdd] = useState(true);
+  const [add, togAdd] = useState(false);
   const [remaining, setRemaining] = useState(0);
   const [total, setTotal] = useState(3000);
 
@@ -115,21 +115,17 @@ const Budget = (props) => {
   }
 
   return(<div id='budget'>
-    {add ? 
-      <AddTrans
-        dollar={dollar}
-        percent={percent}
-        togAdd={togAdd}/>
-    :
-      null}
+
     <Header
       togAdd={togAdd}
     />
+
     <Dashboard
       dollar={dollar}
       percent={percent}
       total={total}
     />
+
     {dollar.length ===0 && percent.length === 0 && !edit ?
       <div id='no-budget'>You don't have any categories yet... Click on the "EDIT" button below to start budgeting.</div>
     :
